@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/PRJ_E/project_nene/web/view/updatesupplier.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/updatecustomer.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Dal/CustomerDao.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Dal/CategoryDao.java</file>
+            <file>file:/E:/PRJ_E/project_nene/web/WEB-INF/web.xml</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Product.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Supplier.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Category.java</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/header.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/displaymain.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/updateproduct.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/listcustomer.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Dal/ProductDao.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Filter/AuthenticationFilter.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Filter/PermissionFilter.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Controller/DisplaydetailServlet.java</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/updatecategory.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Customer.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Controller/DisplayServlet.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Crud_people/ListcustomerServlet.java</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/footer.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Crud_people/UpdatecustomerServlet.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Filter/HomeFilter.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Order.java</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/listproduct.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/listsupplier.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/web/view/listcategory.jsp</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Controller/DashboardServlet.java</file>
+            <file>file:/E:/PRJ_E/project_nene/src/java/Model/Memberlevel.java</file>
+        </group>
+    </open-files>
+</project-private>

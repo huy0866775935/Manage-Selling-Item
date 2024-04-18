@@ -1,0 +1,54 @@
+
+.contrainer{
+    width: 454.4px;
+    height: 350px;
+    box-shadow: 0 0 3px 0 rgba(0,0, 0, 0.3);
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 8% auto 0;
+    
+}
+
+
+.login-header > p {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+.form-item{
+    
+    padding: 15px;
+    margin: 10px 0 ;
+    width: 90%;
+    border: 1px solid wheat;
+    outline:none;
+    
+    
+}
+
+#checkboxx {
+    font-size: 15px;
+    color: darkgray;
+}
+
+button{
+    background-color: #CC6600;
+    color: #fff;
+    border: none;
+    width: 30%;
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px 0 0 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
