@@ -49,7 +49,7 @@ public class AddproductServlet extends HttpServlet {
         String cat = request.getParameter("cat");
         String desc = request.getParameter("desc");
         String photo = request.getParameter("photo");
-            int qua, ca;
+        int qua, ca;
         float pr;
         
         try {
@@ -66,6 +66,7 @@ public class AddproductServlet extends HttpServlet {
                 String ms = p_id + " exsited!!";
                 request.setAttribute("error", ms);
                 
+
                 request.setAttribute("dataunit", pdb.getAllUnit());
                 request.setAttribute("datacategory", cdb.getAll());
                 request.setAttribute("datasupplier", sdb.getAll());

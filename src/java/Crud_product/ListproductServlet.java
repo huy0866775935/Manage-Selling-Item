@@ -32,10 +32,10 @@ public class ListproductServlet extends HttpServlet {
         int page, numperpage = 18; //page so trang se tra ve // so phan tu trong trang
         int size = list1.size();
 
-        int num = (size % numperpage == 0 ? size / numperpage : size / (numperpage) + 1);//so trang
+        int num = (size % numperpage == 0 ? size / numperpage : size / (numperpage) + 1);
 
         String xpage = request.getParameter("page"); //gia tri cua trang ben jsp
-        if (xpage == null) {    
+        if (xpage == null) {
             page = 1;
         } else {
             page = Integer.parseInt(xpage);

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Home</title>
+        <title>Simple Sidebar - Start Bootstrap Template</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="icon/lloo.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -58,7 +58,31 @@
                                 </div>
                             </section>
 
-                         
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    Filter
+                                </header>
+                                <div class="panel-body">
+                                    <form role="form product-form">
+                                        <div class="form-group ">
+                                            <label>ProductName:</label> <br>
+                                            <input type="text" name="pname" value="" class="form-control hasCustomSelect">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Price:</label>
+                                            <select class="form-control hasCustomSelect">
+                                                    
+                                                <option>5...20</option>
+                                                <option>20...50</option>
+                                                <option>50...100</option>
+                                                <option>100...</option>
+                                            </select>
+                                            
+                                        
+                                        <button class="btn btn-primary" id="btnn" type="submit">Filter</button>
+                                    </form>
+                                </div>
+                            </section>
 
                         </section>
                     </div>

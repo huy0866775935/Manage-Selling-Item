@@ -5,12 +5,12 @@
 
 package Controller;
 
-
+import Dal.OrderDao;
 import Dal.OrderdetailDao;
 import Dal.ProductDao;
 import Dal.SupplierDao;
 import Dal.UsersDao;
-
+import Model.Order;
 import Model.Orderdetail;
 import Model.Product;
 import Model.Supplier;
@@ -36,7 +36,8 @@ public class DashboardServlet extends HttpServlet {
         UsersDao udb = new UsersDao();
         int countu = udb.countAccount();
         
-
+        OrderDao odb = new OrderDao();
+        List<Order> listo = odb.getAll();
         
         SupplierDao sdb = new SupplierDao();
         List<Supplier> lists = sdb.getAll();
@@ -47,7 +48,7 @@ public class DashboardServlet extends HttpServlet {
         
         request.setAttribute("numpro", list.size());
         request.setAttribute("numuser", countu);
-
+        request.setAttribute("numorder", listo.size());
         request.setAttribute("numsupplier", lists.size());
         request.setAttribute("top10od", listod);
         

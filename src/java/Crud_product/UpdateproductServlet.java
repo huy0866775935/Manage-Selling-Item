@@ -79,6 +79,19 @@ public class UpdateproductServlet extends HttpServlet {
 
     }
 
+    private boolean ischeck(String dynamicEnter, List<String> staticSelect, int step) {
+        if (staticSelect == null) {
+            return false;
+        } else {
+            for (int i = 0; i < step; i++) {
+                if (staticSelect.get(i) == dynamicEnter) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
     @Override
     public String getServletInfo() {
         return "Short description";

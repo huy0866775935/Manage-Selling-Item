@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : header
+    Created on : 10-Mar-2023, 01:01:15
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -22,7 +26,7 @@
         <section class="header">
             <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">HHH Managerment</a>
+                    <a class="navbar-brand" href="#">Hourseware GoGo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -30,11 +34,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="dashbsr">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="main">Home</a>
+                                <a class="nav-link active" aria-current="page" href="dashbsr">Back</a>
                             </li>
                             <!--call CategoryDao ra va dung-->
                             <%
@@ -73,6 +75,7 @@
                             </li>
 
                         </ul>
+                                <a class="back" href="">Back</a>
                         <c:if test="${empty account}">
                             <form action="login" method="get">
                                 <button type="submit" value="Login" class="btn btn-success">Login</button>

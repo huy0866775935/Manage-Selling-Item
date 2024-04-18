@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : addproduct
+    Created on : 08-Mar-2023, 03:33:32
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -130,7 +134,7 @@
                             </div>
                             <div class="col-lg-3 mt-4">
                                 <label for="">Phonenumber: </label> <br>
-                                <input type="text" value="${cu.phonenumber}" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  title="Ten digits code" name="phonenum" required>
+                                <input type="text" value="${cu.phonenumber}" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12"  title="Ten digits code" name="phonenum" required>
                             </div>
                             <div class="col-lg-3 mt-4">
                                 <label for="">Address: </label> <br>

@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard</title>
+        <title>Simple Sidebar - Start Bootstrap Template</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/dd.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -25,7 +25,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-light" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light"> <i class="fa-brands fa-docker"></i> HHH Manager</div>
+                <div class="sidebar-heading border-bottom bg-light"> <i class="fa-brands fa-docker"></i> Hourseware GoGo</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="dashbsr"> &nbsp; Dashboard</a>
                     <div class="dropdown list-group-item list-group-item-action list-group-item-light p-3">
@@ -63,7 +63,7 @@
                             <a href="#">Users List</a>
                         </div>
                     </div>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="signout">&nbsp; Sign Out</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">&nbsp; Sign Out</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -147,6 +147,45 @@
                     </div>
 
                     <!-- Page content2 - chart and top product-->
+<!--                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 col-12 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-header pb-0 d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title mb-0">Purchase & Sales</h5>
+                                    <div class="graph-sets">
+                                        <ul>
+                                            <li>
+                                                <span>Sales</span>
+                                            </li>
+                                            <li>
+                                                <span>Purchase</span>
+                                            </li>
+                                        </ul>
+                                        <div class="dropdown">
+                                            <button class="btn btn-white btn-sm dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                2022 <img src="assets/img/icons/dropdown.svg" alt="img" class="ms-2">
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="dropdown-item">2022</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="dropdown-item">2021</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="dropdown-item">2020</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="sales_charts"></div>
+                                </div>
+                            </div>
+                        </div>
+
 -->                        <div class="col-lg-5 col-sm-12 col-12 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-header pb-0 d-flex justify-content-between align-items-center">
@@ -158,10 +197,10 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <li>
-                                                <a href="lps" class="dropdown-item">Product List</a>
+                                                <a href="productlist.html" class="dropdown-item">Product List</a>
                                             </li>
                                             <li>
-                                                <a href="adps" class="dropdown-item">Product Add</a> 
+                                                <a href="addproduct.html" class="dropdown-item">Product Add</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -177,12 +216,102 @@
                                                     <th>Price</th>
                                                 </tr>
                                             </thead>
-
+                                            <tbody>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td class="productimgname">
+                                                        <a href="productlist.html" class="product-img">
+                                                            <img src="assets/img/product/product6.jpg" alt="product">
+                                                        </a>
+                                                        <a href="productlist.html">Macbook Pro</a>
+                                                    </td>
+                                                    <td>$291.01</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div><!--
 -->                            </div>
+                        </div><!--
+
+                         Page content3 - table list product out of stock
+                        <div class="row">
+                            <div class="card-body">
+                                <h4 class="card-title">Expired Products</h4>
+                                <div class="table-responsive dataview">
+                                    <table class="table datatable ">
+                                        <thead>
+                                            <tr>
+                                                <th>SNo</th>
+                                                <th>Product Code</th>
+                                                <th>Product Name</th>
+                                                <th>Brand Name</th>
+                                                <th>Category Name</th>
+                                                <th>Expiry Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="javascript:void(0);">IT0001</a></td>
+                                                <td class="productimgname">
+                                                    <a class="product-img" href="productlist.html">
+                                                        <img src="assets/img/product/product2.jpg" alt="product">
+                                                    </a>
+                                                    <a href="productlist.html">Orange</a>
+                                                </td>
+                                                <td>N/D</td>
+                                                <td>Fruits</td>
+                                                <td>12-12-2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="javascript:void(0);">IT0002</a></td>
+                                                <td class="productimgname">
+                                                    <a class="product-img" href="productlist.html">
+                                                        <img src="assets/img/product/product3.jpg" alt="product">
+                                                    </a>
+                                                    <a href="productlist.html">Pineapple</a>
+                                                </td>
+                                                <td>N/D</td>
+                                                <td>Fruits</td>
+                                                <td>25-11-2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="javascript:void(0);">IT0003</a></td>
+                                                <td class="productimgname">
+                                                    <a class="product-img" href="productlist.html">
+                                                        <img src="assets/img/product/product4.jpg" alt="product">
+                                                    </a>
+                                                    <a href="productlist.html">Stawberry</a>
+                                                </td>
+                                                <td>N/D</td>
+                                                <td>Fruits</td>
+                                                <td>19-11-2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="javascript:void(0);">IT0004</a></td>
+                                                <td class="productimgname">
+                                                    <a class="product-img" href="productlist.html">
+                                                        <img src="assets/img/product/product5.jpg" alt="product">
+                                                    </a>
+                                                    <a href="productlist.html">Avocat</a>
+                                                </td>
+                                                <td>N/D</td>
+                                                <td>Fruits</td>
+                                                <td>20-11-2022</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
+                    </div>-->
+
+                </div>
+            </div>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->

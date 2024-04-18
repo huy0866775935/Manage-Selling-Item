@@ -1,30 +1,34 @@
-
+<%-- 
+    Document   : addproduct
+    Created on : 08-Mar-2023, 03:33:32
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Add product</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="icon/dd.png" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="view/css/styles.css" rel="stylesheet" >
-        <link href="view/css/styledashboard.css" rel="stylesheet">
-        <link href="view/css/styleproduct.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/fe000f9b2a.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Add product</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="icon/dd.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="view/css/styles.css" rel="stylesheet" >
+    <link href="view/css/styledashboard.css" rel="stylesheet">
+    <link href="view/css/styleproduct.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe000f9b2a.js" crossorigin="anonymous"></script>
 
 
-    </head>
+</head>
 
-    <body style="background-color: floralwhite;">
-        <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
+<body style="background-color: floralwhite;">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
             <div class="border-end bg-light" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light"> <i class="fa-brands fa-docker"></i> Hourseware GoGo</div>
                 <div class="list-group list-group-flush">
@@ -81,11 +85,11 @@
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active"><a class="nav-link" href="main">Home</a></li>
                                 <li class="nav-item dropdown">
-
-                                    <c:if test="${not empty account}">
-                                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello, &nbsp; ${sessionScope.account.displayname}</a>   
-                                    </c:if>
+                                    
+                                       <c:if test="${not empty account}">
+                                           <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello, &nbsp; ${sessionScope.account.displayname}</a>   
+                                       </c:if>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="signout">Sign out</a>
                                         <a class="dropdown-item" href="#!">Account</a>
@@ -96,67 +100,67 @@
                         </div>
                     </div>
                 </nav>
-                <!-- Page content-->
-                <div class="container mt-4">
-                    <div class="row">
-                        <div class="col-lg-6 ">
-                            <h4>Supplier Update</h4>
-                            <h6>Update Supplier</h6>
-                        </div>
-
-                        <hr>
+            <!-- Page content-->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <h4>Supplier Update</h4>
+                        <h6>Update Supplier</h6>
                     </div>
-                    <form action="updatesupplier" method="post">
-                        <div class="row">
 
-                            <div class="col-lg-3">
-                                <label for="">SupplierId:</label> <br>
-                                <input type="text" name="sid" value="${su.sup_id}" readonly>
-                            </div>
-                            <div class="col-lg-3">
-                                <label for="">SupplierName:</label> <br>
-                                <input type="text" name="sname"  value="${su.sup_name}" required>
-                            </div>
-                            <div class="col-lg-3">
-                                <label for="">Address: </label> <br>
-                                <input type="text" name="saddress"  value="${su.address}" required>
-                            </div>
-                            <div class="col-lg-3">
-                                <label for="">Phone:</label> <br>
-                                <input type="text" value="${su.phone}" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" name="sphone" required>
-                            </div>
-                            <div class="col-lg-3 mt-4">
-                                <label for="">City: </label> <br>
-                                <input type="text" name="scity" value="${su.city}"  required>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-4 mt-4">
-                                <button type="submit" class="btn btn-success">Change</button>
-                                <button type="reset" class="btn btn-danger">Cancel</button>
-
-                            </div>
-                        </div>
-
-                    </form>
-                    <div class="col-lg-8 mt-4">
-                        <h6 style="color: red">${error}</h6>
+                    <hr>
+                </div>
+                <form action="updatesupplier" method="post">
+                <div class="row">
+                    
+                    <div class="col-lg-3">
+                        <label for="">SupplierId:</label> <br>
+                        <input type="text" name="sid" value="${su.sup_id}" readonly>
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="">SupplierName:</label> <br>
+                        <input type="text" name="sname"  value="${su.sup_name}" required>
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="">Address: </label> <br>
+                        <input type="text" name="saddress"  value="${su.address}" required>
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="">Phone:</label> <br>
+                        <input type="text" value="${su.phone}" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"  title="Ten digits code" name="sphone" required>
+                    </div>
+                    <div class="col-lg-3 mt-4">
+                        <label for="">City: </label> <br>
+                        <input type="text" name="scity" value="${su.city}"  required>
                     </div>
 
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <button type="submit" class="btn btn-success">Change</button>
+                        <button type="reset" class="btn btn-danger">Cancel</button>
 
-
+                    </div>
+                </div>
+                
+                </form>
+                <div class="col-lg-8 mt-4">
+                    <h6 style="color: red">${error}</h6>
+                </div>
 
             </div>
-            <!-- Bootstrap core JS-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- Core theme JS-->
-            <script src="view/js/scripts.js"></script>
 
 
-    </body>
+
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="view/js/scripts.js"></script>
+        
+        
+</body>
 
 </html>

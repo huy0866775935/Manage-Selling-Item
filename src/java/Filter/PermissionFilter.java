@@ -106,11 +106,13 @@ public class PermissionFilter implements Filter {
         HttpSession session = httpRequest.getSession();
         boolean isStaff = false;
         Users u = (Users) session.getAttribute("account");
-        boolean isLoggedIn = (session != null && session.getAttribute("account") != null);	
+        boolean isLoggedIn = (session != null && session.getAttribute("account") != null);
+	
         if(isLoggedIn && u.getRole().equals("staff")){
                 isStaff = true;
         }
         if(isStaff){
+            
             httpResponse.sendRedirect("dashbsr");
         }else{
             chain.doFilter(request, response);

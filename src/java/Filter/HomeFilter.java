@@ -100,9 +100,9 @@ public class HomeFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
         String url = req.getServletPath();
-        if (url.endsWith(".jsp")) {
-            res.sendRedirect("main");
-        }
+//        if (url.endsWith(".jsp")) {
+//            res.sendRedirect("main");
+//        }
 
         Throwable problem = null;
         try {

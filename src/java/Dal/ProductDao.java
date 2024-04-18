@@ -43,12 +43,11 @@ public class ProductDao extends DBContext {
     //search
     public List<Product> getAll(String key) {
         List<Product> list = new ArrayList<>();
-         //Phần điều kiện WHERE 1 = 1 làm cho truy vấn trở nên linh hoạt hơn.mở rộng bằng cách thêm các điều kiện khác nếu cần thiết, mà không cần phải kiểm tra xem WHERE đã được thêm hay chưa.
         String sql = " SELECT * FROM Product p INNER JOIN Category c ON p.CategoryID = c.CategoryID WHERE 1 = 1";
-        if (key != null && !key.equals("")) {
-            sql += "AND c.CategoryName LIKE '%" + key + "%' OR p.Product_name LIKE '%" + key + "%'";
+        if (key !=null && !key.equals("")){
+             sql += "AND c.CategoryName LIKE '%"  + key + "%' OR p.Product_name LIKE '%"+key+"%'";
         }
-
+        
         try {
             PreparedStatement st = connection.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
@@ -267,18 +266,20 @@ public class ProductDao extends DBContext {
 
     public static void main(String[] args) {
         ProductDao pdb = new ProductDao();
-        //  List<Product> listp = pdb.getAll();
-        List<String> lists = pdb.getAllStatus();
-        for (String list : lists) {
-            System.out.println(list.trim());
+//        List<Product> listp = pdb.getAll();
+//
 //        for (int i = 0; i < 2; i++) {
 //            System.out.println(listp.get(i).toString());
-        }
+//        }
 
+//        List<String> lists = pdb.getAllUnit();
 //        for (String list : lists) {
 //            System.out.println(list.trim());
 //        }
-        //      List<Product> listp = pdb.getAll();
-        //     System.out.println(listp.size());
+
+          List<Product> listp = pdb.getAll();
+          System.out.println(listp.size());
+         
+
     }
 }

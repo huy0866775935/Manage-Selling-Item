@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : addproduct
+    Created on : 08-Mar-2023, 03:33:32
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -106,7 +110,7 @@
 
                     <hr>
                 </div>
-                <form action="adps" method="post">  
+                <form action="adps" method="post">
                 <div class="row">
                     
                     <div class="col-lg-3">
@@ -127,7 +131,7 @@
                             <c:forEach var="u" items="${dataunit}">
                                 <option value="${u.trim()}">${u.trim()}</option>
                             </c:forEach>
-                        </select>   
+                        </select>
                     </div>
 
                 </div>
@@ -168,12 +172,12 @@
                     </div>
                 </div>
 
-<!--                <div class="row">
+                <div class="row">
                     <div class="col-lg-6 mt-4">
                         <label for="formFile" class="">Photo input example</label>
                         <input class="form-control" type="file" name="photo" id="formFile">
 
-                    </div>-->
+                    </div>
 
 <!--                    <div class="col-lg-3 mt-4">
                         <label for="">Created at:</label> <br>

@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : addproduct
+    Created on : 08-Mar-2023, 03:33:32
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

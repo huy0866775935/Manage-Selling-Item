@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : newjsp
+    Created on : 13-Feb-2023, 16:26:38
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

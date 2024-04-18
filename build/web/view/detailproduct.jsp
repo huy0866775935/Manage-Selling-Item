@@ -1,28 +1,27 @@
-
+<%-- 
+    Document   : detailproduct
+    Created on : 05-Mar-2023, 16:12:07
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/x-icon" href="icon/dd.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="view/css/styleself.css">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Add product</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="icon/dd.png" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="view/css/styles.css" rel="stylesheet" >
-    <link href="view/css/styledashboard.css" rel="stylesheet">
-    <link href="view/css/styleproduct.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fe000f9b2a.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/fe000f9b2a.js" crossorigin="anonymous"></script>
 
 
-</head>
-
-  <body>
+    </head>
+    <body>
         <jsp:include page="header.jsp"></jsp:include>
         <c:set var="p" value="${requestScope.data}"/>
         <section class="body mb-3">
@@ -63,5 +62,4 @@
                 integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
     </body>
-
 </html>

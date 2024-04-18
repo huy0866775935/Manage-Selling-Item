@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : listproduct
+    Created on : 06-Mar-2023, 21:29:13
+    Author     : Admin
+--%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -146,7 +150,14 @@
                         <hr>
                     </div>
                     <div class="row">
-                       
+                        <div class="search">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid"
+                                       placeholder="name@example.com">
+                                <label for="floatingInputGrid"><i class="fa-solid fa-magnifying-glass"></i>
+                                    Search...</label>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive dataview">
                                 <table class="table datatable ">

@@ -83,3 +83,12 @@ body {
     color: beige;
 }
 
+.back{
+    text-decoration: none;
+    padding-right: 10px
+}
+a.back{
+    padding-right: 10px
+            
+
+}

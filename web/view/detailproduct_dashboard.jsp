@@ -164,7 +164,7 @@
                                 <td><%=i.getUpdated_at()%></td>
                             </tr>
                             <tr>
-                                <th>Category Name</th>
+                                <th>CategoryName</th>
                                 <td><%=i.getCate().getCategory_name()%></td>
                             </tr>
                    

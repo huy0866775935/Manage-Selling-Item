@@ -116,6 +116,7 @@ public class AuthenticationFilter implements Filter {
         } else if (!isLoggedIn && !isLoginPage) {
             httpResponse.sendRedirect(loginURI);
         } else {
+            //viec chan day dien ra o chain.dofilter
             chain.doFilter(request, response);
         }
         
@@ -211,7 +212,7 @@ public class AuthenticationFilter implements Filter {
         }
         return stackTrace;
     }
-
+    // login note
     public void log(String msg) {
         filterConfig.getServletContext().log(msg);
     }

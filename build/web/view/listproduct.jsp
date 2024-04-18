@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : listproduct
+    Created on : 06-Mar-2023, 21:29:13
+    Author     : Admin
+--%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>List Product</title>
+        <title>Simple Sidebar - Start Bootstrap Template</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="icon/dd.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -63,7 +67,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
              <div class="border-end bg-light" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light"> <i class="fa-brands fa-docker"></i> HHH Manager</div>
+                <div class="sidebar-heading border-bottom bg-light"> <i class="fa-brands fa-docker"></i> Hourseware GoGo</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="dashbsr"> &nbsp; Dashboard</a>
                     <div class="dropdown list-group-item list-group-item-action list-group-item-light p-3">
@@ -146,6 +150,14 @@
                         <hr>
                     </div>
                     <div class="row">
+                        <div class="search">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid"
+                                       placeholder="name@example.com">
+                                <label for="floatingInputGrid"><i class="fa-solid fa-magnifying-glass"></i>
+                                    Search...</label>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive dataview">
                                 <table class="table datatable ">
